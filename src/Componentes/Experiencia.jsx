@@ -1,6 +1,79 @@
-import React from 'react';
+import React from "react";
 
 function Experiencia() {
+  const experiencias = [
+    {
+      cargo: "Desarrolladora Frontend",
+      empresa: "Tech Solutions S.A.",
+      anio: "2022–2024",
+      descripcion:
+        "Desarrollo de interfaces web con React, optimización de componentes, manejo de estados y consumo de APIs REST.",
+    },
+    {
+      cargo: "Proyecto Personal – Página de Recomendaciones",
+      empresa: "Proyecto Independiente",
+      anio: "2024",
+      descripcion:
+        "Creación de una página HTML con recomendaciones de libros, música y películas. Implementación de login y control por edad.",
+    },
+    {
+      cargo: "Diseñadora UX/UI",
+      empresa: "Creativa Studio",
+      anio: "2021–2022",
+      descripcion:
+        "Diseño de prototipos en Figma, estructuración de flujos de usuario y pruebas de usabilidad para productos digitales.",
+    },
+    {
+      cargo: "Auxiliar Administrativa",
+      empresa: "Servicios Globales LTDA",
+      anio: "2018–2021",
+      descripcion:
+        "Gestión de documentos, manejo de agendas, atención a clientes y organización de información interna.",
+    },
+    {
+      cargo: "Proyecto CRUD en Python + SQL Server",
+      empresa: "Proyecto Independiente",
+      anio: "2024",
+      descripcion:
+        "Desarrollo de sistema CRUD con Python, pyodbc y SQL Server. Implementación de triggers para registrar historial de cambios.",
+    },
+    {
+      cargo: "Desarrolladora Junior",
+      empresa: "Digital Web Group",
+      anio: "2017–2018",
+      descripcion:
+        "Mantenimiento de páginas web, actualización de estilos, corrección de errores y apoyo en proyectos de diseño responsivo.",
+    },
+    {
+      cargo: "Proyecto: Portafolio Personal",
+      empresa: "Freelance",
+      anio: "2023",
+      descripcion:
+        "Desarrollo de portafolio con React, incluyendo componentes reutilizables, diseño modular y animaciones básicas.",
+    },
+    {
+      cargo: "Asistente de Soporte Técnico",
+      empresa: "CompuRed SAS",
+      anio: "2016–2017",
+      descripcion:
+        "Soporte técnico a usuarios, instalación de software, formateo de equipos y solución de problemas de conectividad.",
+    },
+    {
+      cargo: "Proyecto: Sistema de Inventarios",
+      empresa: "Proyecto Académico",
+      anio: "2022",
+      descripcion:
+        "Creación de sistema de inventario básico usando HTML, CSS, JavaScript y almacenamiento local.",
+    },
+    {
+      cargo: "Practicante Auxiliar Administrativa",
+      empresa: "Colegio San Martín",
+      anio: "2015–2016",
+      descripcion:
+        "Organización de archivos, redacción de documentos, gestión de llamadas y apoyo en tareas administrativas.",
+    },
+  ];
+
   return (
     <div className="container">
       <section className="Experiencia">
@@ -8,46 +81,22 @@ function Experiencia() {
           <i className="fas fa-briefcase"></i> Experiencia Laboral
         </h3>
 
-        {/* Primer puesto */}
-        <h4>Puesto</h4>
-        <div className="nombre_cargo">Desarrolladora Frontend</div>
-        <div className="nombre_empresa">Tech Solutions S.A.</div>
-        <div className="anio_puesto">2022–2024</div>
-        <p className="descripcion_puesto">
-          Desarrollo de interfaces web con React, optimización de componentes, manejo de estados y consumo de APIs REST.
-        </p>
-
-        {/* Segundo puesto */}
-        <h4>Puesto</h4>
-        <div className="nombre_cargo">Proyecto Personal – Página de Recomendaciones</div>
-        <div className="nombre_empresa">Proyecto Independiente</div>
-        <div className="anio_puesto">2024</div>
-        <p className="descripcion_puesto">
-          Creación de una página HTML con recomendaciones de libros, música y películas. Implementación de login y control por edad.
-        </p>
-
-        {/* Tercer puesto */}
-        <h4>Puesto</h4>
-        <div className="nombre_cargo">Diseñadora UX/UI</div>
-        <div className="nombre_empresa">Creativa Studio</div>
-        <div className="anio_puesto">2021–2022</div>
-        <p className="descripcion_puesto">
-          Gestión de documentos, manejo de agendas, atención a clientes y organización de información interna.
-        </p>
-
-        {/* Cuarto puesto */}
-        <h4>Puesto</h4>
-        <div className="nombre_cargo">Proyecto CRUD en Python + SQL Server</div>
-        <div className="nombre_empresa">Proyecto Independiente</div>
-        <div className="anio_puesto">2024</div>
-        <p className="descripcion_puesto">
-          Desarrollo de sistema CRUD con Python, pyodbc y SQL Server. Implementación de triggers para registrar historial de cambios.
-        </p>
+        {/* Renderizado de la lista de experiencias */}
+        {experiencias.map((exp, index) => (
+          <div key={index} className="experiencia_item">
+            <h4>{exp.cargo}</h4>
+            <div className="nombre_empresa">{exp.empresa}</div>
+            <div className="anio_puesto">{exp.anio}</div>
+            <p className="descripcion_puesto">{exp.descripcion}</p>
+          </div>
+        ))}
       </section>
 
-      {/* Footer dentro del componente */}
       <footer className="footer_cv">
-        <p>© {new Date().getFullYear()} Liliana Panesso. Todos los derechos reservados.</p>
+        <p>
+          © {new Date().getFullYear()} Liliana Panesso. Todos los derechos
+          reservados.
+        </p>
         <div className="footer_links">
           <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i>
@@ -55,7 +104,7 @@ function Experiencia() {
           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="panessoliliana785@gmail.com">
+          <a href="mailto:tucorreo@email.com">
             <i className="fas fa-envelope"></i>
           </a>
         </div>
