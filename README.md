@@ -1,18 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Liliana Panesso — Aprendiz SENA Proyecto: GA1-220501096-03-AA1-EV05
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Mi Proyecto: Hoja de Vida en React
 
-## React Compiler
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Este es un proyecto que desarrollé en React, donde muestro mi hoja de vida digital de una forma organizada y visualmente clara.
+Decidí separar cada parte del CV en componentes (Cabecera, Perfil, Educación y Experiencia) para trabajar el código de manera más ordenada y entender mejor cómo funciona la estructura de una aplicación en React.
 
-Note: This will impact Vite dev & build performances.
 
-## Expanding the ESLint configuration
+Vista previa en el navegador
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1918" height="843" alt="foto_1" src="https://github.com/user-attachments/assets/126feb55-ffc0-4f29-8eb8-c5ef257d841b" />
+
+<img width="945" height="817" alt="image" src="https://github.com/user-attachments/assets/0274fa3d-55e0-44f3-a927-1c7e34c3caa4" />
+
+<img width="937" height="875" alt="image" src="https://github.com/user-attachments/assets/15c48cea-4b9d-4abd-9198-69eb1c279d02" />
+
+
+Cómo ejecutar el proyecto
+
+
+1. Clonar el repositorio:https://github.com/PROYECTOWEBREACT2/PROYECTO_REACT.git
+2. Instalar dependencias, Dentro de la carpeta del proyecto ejecuto: npm install
+3. Iniciar la aplicación, Para ver el proyecto en el navegador uso:npm run dev
+4. Luego ingreso a:http://localhost:5173/
