@@ -1,5 +1,5 @@
 import React from 'react';
-import mifoto from "../assets/foto_fondo_cv.jpeg";
+import mifoto from "../assets/react.svg";
 
 function CabeceraCV() {
   const data = {

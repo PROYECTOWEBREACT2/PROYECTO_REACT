@@ -104,7 +104,7 @@ function Experiencia() {
           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:tucorreo@email.com">
+          <a href="panessoliliana785@gmil.com">
             <i className="fas fa-envelope"></i>
           </a>
         </div>
