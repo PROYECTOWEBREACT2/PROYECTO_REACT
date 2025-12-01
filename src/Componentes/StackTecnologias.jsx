@@ -8,13 +8,12 @@ function StackTecnologias() {
     { id: 4, nombre: "PostgreSQL", tipo: "base de datos" }
   ];
 
-  // Colores para las etiquetas según tipo
   const obtenerColor = (tipo) => {
     switch (tipo) {
-      case "frontend": return "#4A90E2";   // azul
-      case "backend": return "#27AE60";    // verde
-      case "base de datos": return "#F39C12"; // naranja
-      default: return "#7F8C8D";           // gris
+      case "frontend": return "#4A90E2";  
+      case "backend": return "#27AE60";    
+      case "base de datos": return "#F39C12";
+      default: return "#7F8C8D";          
     }
   };
 
@@ -25,7 +24,7 @@ function StackTecnologias() {
         <i className="fas fa-code"></i> Stack de Tecnologías
       </h3>
 
-      {/* 🟣 Renderizado condicional: si no hay tecnologías */}
+     
       {tecnologias.length == 0 ? (
         <p>No hay tecnologías registradas.</p>
       ) : (
@@ -49,8 +48,8 @@ function StackTecnologias() {
                 {" "}({tech.tipo})
               </span>
 
-              {/* 🟡 Renderizado condicional tipo ternario */}
-              {tech.tipo == "frontend" ? " ⭐" : ""}
+              {}
+              {tech.tipo == "frontend" ? "" : ""}
             </li>
           ))}
         </ul>
