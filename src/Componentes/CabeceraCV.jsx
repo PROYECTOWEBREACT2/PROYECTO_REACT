@@ -21,7 +21,7 @@ function CabeceraCV() {
 
         <h1>{data.nombre}</h1>
 
-        {/* Renderizado de lista de datos de contacto */}
+        
         <p className="info_contacto">
           {data.contacto.map((item, index) => (
             <span key={index}>
