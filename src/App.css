@@ -81,6 +81,7 @@ h4 { margin-top: 10px; font-size: 1.2em; }
 .Tecnologias,
 .titulo_perfil,
 .titulo_Educacion,
+.titulo_habilidades,
 .titulo_Experiencia {
   background-color: var(--color-seccion);
   padding: 10px 15px;

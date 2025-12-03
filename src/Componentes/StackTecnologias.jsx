@@ -1,12 +1,6 @@
 import React from "react";
 
-function StackTecnologias() {
-  const tecnologias = [
-    { id: 1, nombre: "React", tipo: "frontend" },
-    { id: 2, nombre: "Node.js", tipo: "backend" },
-    { id: 3, nombre: "JavaScript", tipo: "frontend" },
-    { id: 4, nombre: "PostgreSQL", tipo: "base de datos" }
-  ];
+export default function  StackTecnologias({tecnologias}) {
 
   const obtenerColor = (tipo) => {
     switch (tipo) {
@@ -60,4 +54,3 @@ function StackTecnologias() {
 
 }
 
-export default StackTecnologias;
