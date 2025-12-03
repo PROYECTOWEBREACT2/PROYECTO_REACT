@@ -107,3 +107,99 @@ Captura del resultado
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
+ Reutilización de componentes en React – Props y desestructuración con una hoja de vida dinámica
+Actividad: GA1-220501096-03-AA1-EV07 
+
+Explicación de la Actividad
+
+En este proyecto, cada uno de mis componentes recibe información desde App.jsx a través de props.
+Los props funcionan como datos que viajan del componente padre hacia los componentes hijos, permitiendo que cada sección del CV se renderice de manera dinámica.
+
+A continuación explico, en palabras, cómo utilicé cada prop en mis componentes:
+
+ 1. Componente CabeceraCV
+
+Este componente recibe tres props principales:
+
+nombre
+
+Este prop contiene el nombre de la persona.
+Lo usé para mostrarlo como el título principal de la cabecera del CV.
+
+rol
+
+Este prop representa el cargo o rol profesional.
+Lo utilicé para colocarlo debajo del nombre, destacando la profesión o área laboral.
+
+contacto
+
+Este prop es una lista de elementos de contacto.
+Dentro del componente, hice un recorrido de cada elemento y lo imprimí como parte de una línea de información, colocando íconos y texto del contacto.
+En resumen, este prop permitió mostrar los diferentes medios de contacto de forma dinámica.
+
+2. Componente Educacion
+
+Este componente recibe un prop llamado:
+
+educacion
+
+Este prop es una lista de estudios realizados.
+Cada elemento de la lista contiene el curso, la institución y el año.
+Dentro del componente lo utilicé para recorrer y mostrar cada formación académica como un bloque independiente.
+Gracias a este prop el componente puede mostrar una cantidad variable de estudios sin necesidad de escribirlos manualmente.
+
+ 3. Componente Experiencia
+
+Este componente recibe el prop:
+
+experiencias
+
+Este prop es una lista de empleos o trabajos realizados.
+Cada experiencia incluye cargo, empresa, año y descripción.
+Dentro del componente se recorre la lista y se muestra la información de cada empleo.
+El prop permite que el contenido se adapte automáticamente a las experiencias que se envíen desde el componente principal.
+
+4. Componente Habilidades
+
+Este componente recibe el prop:
+
+habilidades
+
+Este prop es una lista donde cada elemento indica una habilidad y su nivel (por ejemplo: básico, intermedio o avanzado).
+Lo utilicé para mostrar cada habilidad dentro de una lista visual.
+El componente no inventa nada, simplemente muestra lo que recibe a través del prop.
+
+5. Componente Perfil
+
+Este componente recibe un solo prop:
+
+texto
+
+Este prop contiene la descripción profesional o resumen del perfil.
+Lo usé para mostrar un párrafo que representa la presentación del perfil laboral, permitiendo cambiar este texto fácilmente desde el componente padre sin modificar el componente.
+
+6. Componente Proyectos
+
+Este componente recibe el prop:
+
+proyectos
+
+Este prop es una lista de proyectos desarrollados.
+Cada proyecto trae información como el título, el año, la descripción y las tecnologías utilizadas.
+Dentro del componente, utilizo este prop para mostrar cada proyecto en su propio bloque, junto con sus etiquetas de tecnologías.
+
+7. Componente StackTecnologias
+
+Este componente recibe el prop:
+
+tecnologias
+
+Este prop es una lista con diferentes tecnologías, cada una indicando su nombre y el tipo (por ejemplo, frontend, backend o base de datos).
+Dentro del componente, este prop permite clasificar visualmente cada tecnología según su tipo, y mostrarla como una etiqueta de color.
+Esto hace que el componente sea totalmente dinámico según la cantidad y tipo de tecnologías que reciba.
+
+Resultado en Navegador
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+
