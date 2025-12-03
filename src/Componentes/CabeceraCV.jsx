@@ -1,16 +1,7 @@
 import React from 'react';
 import mifoto from "../assets/react.svg";
 
-function CabeceraCV() {
-  const data = {
-    nombre: "Liliana Sofia Panesso Mendez",
-    rol: "Desarrolladora Front-End Jr.",
-    contacto: [
-      { icono: "fas fa-envelope", texto: "panessoliliana785@gmail.com" },
-      { icono: "fas fa-phone", texto: "3007649182" },
-      { icono: "fas fa-map-marker-alt", texto: "Medellín, Colombia" }
-    ]
-  };
+function CabeceraCV({nombre, rol, contacto}) {
 
   return (
     <header className="container">
@@ -19,22 +10,26 @@ function CabeceraCV() {
           <img src={mifoto} alt="Foto de perfil" />
         </div>
 
-        <h1>{data.nombre}</h1>
+        <h1>{nombre}</h1>
 
         
         <p className="info_contacto">
-          {data.contacto.map((item, index) => (
+          {contacto.map((item, index) => (
             <span key={index}>
               <i className={item.icono}></i> {item.texto}
-              {index < data.contacto.length - 1 && " | "}
+              {index <contacto.length - 1 && " | "}
             </span>
           ))}
         </p>
 
-        <h2 className="titulo_rol">{data.rol}</h2>
+        <h2 className="titulo_rol">{rol}</h2>
       </div>
     </header>
   );
 }
 
 export default CabeceraCV;
+
+//actualizacion de componentes
+//actualizacion de componentes
+
