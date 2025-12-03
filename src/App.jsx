@@ -7,6 +7,8 @@ import {
   EducacionData,
   ExperienciaData,
   StackTecnologiasData,
+  ProyectosData,
+  HabilidadesData,
 } from "./data/cvData";
 
 
@@ -15,6 +17,10 @@ import Perfil from "./Componentes/Perfil";
 import Educacion from "./Componentes/Educacion";
 import Experiencia from "./Componentes/Experiencia";
 import StackTecnologias from "./Componentes/StackTecnologias";
+import Habilidades from "./Componentes/Habilidades";
+import "./App.css";
+import Proyectos from "./Componentes/Proyectos";
+import "./App.css";
 import "./App.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -29,10 +35,15 @@ function App() {
       <Perfil texto={PerfilData.texto} />
       <Educacion educacion={EducacionData.educacion}  />
       <StackTecnologias tecnologias={StackTecnologiasData.tecnologias}  />
-      <Experiencia experiencias={ExperienciaData.experiencias}   />     
-    
+     
+      <Proyectos proyectos={ProyectosData.proyectos} />
+
+       <Habilidades habilidades={HabilidadesData.habilidades} />
+        <Experiencia experiencias={ExperienciaData.experiencias}   />     
     </div>
   );
 }
 
 export default App;
+
+//app.jsx totalmente actualizada
