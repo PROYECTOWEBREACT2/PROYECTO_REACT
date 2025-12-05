@@ -204,4 +204,67 @@ Resultado en Navegador
 ![alt text](image-4.png)
 
 
+GA1-220501096-03-AA1-EV08 – Eventos y estado local en React – CV dinámico con interactividad
+
+Descripción de la actividad:
+
+
+Este proyecto fue realizado para practicar renderizado condicional, renderizado de listas y la gestión de estados en React.
+La aplicación permite agregar tecnologías, clasificarlas por tipo y mostrarlas dinámicamente en pantalla.
+
+ Funcionalidades añadidas
+ 1. Formulario para agregar tecnologías
+
+El usuario puede ingresar el nombre de una tecnología y elegir su tipo (Frontend, Backend o Base de Datos).
+
+Cada tecnología se guarda con un ID único.
+
+Los campos se validan antes de agregar.
+
+2. Renderizado de lista dinámica
+
+Las tecnologías agregadas se muestran automáticamente sin recargar la página.
+
+Se organizan por categoría usando condicionales.
+
+3. Diseño organizado
+
+El formulario se ubica en una sección específica.
+
+Se usa CSS para alinear elementos y mantener el diseño ordenado.
+
+4. Footer incluido
+
+Se añadió un pie de página con enlaces a GitHub, LinkedIn y correo.
+
+Capturas de pantalla
+
+<img width="902" height="553" alt="image" src="https://github.com/user-attachments/assets/b078ee57-e1f7-490d-9b4d-310eda8f6239" />
+
+<img width="467" height="320" alt="image" src="https://github.com/user-attachments/assets/51b9d7d8-b4f0-40bd-8c3c-782a6c698cac" />
+
+<img width="930" height="559" alt="image" src="https://github.com/user-attachments/assets/8513a288-0f9b-414f-be26-ea856ee399e4" />
+
+<img width="947" height="581" alt="image" src="https://github.com/user-attachments/assets/21a53c27-6be2-4a63-8a94-955410fd86a4" />
+
+<img width="954" height="611" alt="image" src="https://github.com/user-attachments/assets/a623bcef-8ca4-4f32-b351-6e6bad42b5c0" />
+
+
+
+
+
+
+
+
+
+
+Cómo ejecutar el proyecto
+
+
+1. Clonar el repositorio:https://github.com/PROYECTOWEBREACT2/PROYECTO_REACT.git
+2. Instalar dependencias, Dentro de la carpeta del proyecto ejecuto: npm install
+3. Iniciar la aplicación, Para ver el proyecto en el navegador uso:npm run dev
+4. Luego ingreso a:http://localhost:5173/
+
+
 
