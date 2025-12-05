@@ -3,7 +3,7 @@ import React from "react";
 
 export const CabeceraData = {
   nombre: "Liliana Sofia Panesso Mendez",
-  profesion: "Desarrolladora Front-End Jr.",
+  rol: "Desarrolladora Front-End Jr.",
   contacto: [
     { icono: "fas fa-envelope", texto: "panessoliliana785@gmail.com" },
     { icono: "fas fa-phone", texto: "3007649182" },

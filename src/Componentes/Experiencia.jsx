@@ -10,7 +10,7 @@ export default function Experiencia({experiencias}) {
           <i className="fas fa-briefcase"></i> Experiencia Laboral
         </h3>
 
-        {/* Renderizado de la lista de experiencias */}
+        
         {experiencias.map((exp, index) => (
           <div key={index} className="experiencia_item">
             <h4>{exp.cargo}</h4>
@@ -21,23 +21,7 @@ export default function Experiencia({experiencias}) {
         ))}
       </section>
 
-      <footer className="footer_cv">
-        <p>
-          © {new Date().getFullYear()} Liliana Panesso. Todos los derechos
-          reservados.
-        </p>
-        <div className="footer_links">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i>
-          </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="panessoliliana785@gmil.com">
-            <i className="fas fa-envelope"></i>
-          </a>
-        </div>
-      </footer>
+    
     </div>
   );
 }
